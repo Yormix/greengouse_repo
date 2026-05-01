@@ -17,6 +17,9 @@ docker/node-red-data/
 # ESP32 / Arduino
 esp32/**/*.elf
 esp32/**/*.bin
+esp32/**/secrets.h
+esp32/**/*.bin
+esp32/**/*.elf
 
 # Sistema operativo
 .DS_Store
