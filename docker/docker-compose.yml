@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+
+  backend:
+    build: ./php
+    container_name: greenhouse_backend
+    ports:
+      - "8080:80"
+    volumes:
+      - ../backend:/var/www/html
+    depends_on:
+      - postgres
+    environment:
+      - DB_HOST=postgres
+      - DB_NAME=greenhouse
+      - DB_USER=admin
+      - DB_PASS=secreto123
+
+  postgres:
+    image: postgres:15
+    container_name: greenhouse_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=greenhouse
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=secreto123
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+
+  mosquitto:
+    image: eclipse-mosquitto:2
+    container_name: greenhouse_mqtt
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mosquitto:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+
+  node-red:
+    image: nodered/node-red:latest
+    container_name: greenhouse_nodered
+    ports:
+      - "1880:1880"
+    volumes:
+      - ./node-red-data:/data
+    depends_on:
+      - mosquitto
+      - postgres
+    environment:
+      - TZ=America/Mexico_City

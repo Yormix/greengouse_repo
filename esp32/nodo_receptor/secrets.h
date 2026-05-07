@@ -24,8 +24,8 @@
 //  La red a la que se conectará el ESP32.
 //  El ESP32 y la PC con Docker deben estar en la misma red local.
 // -------------------------------------------------------------
-#define WIFI_SSID       "NOMBRE_DE_TU_RED"      // Sensible a mayúsculas
-#define WIFI_PASSWORD   "CONTRASEÑA_DE_TU_RED"
+#define WIFI_SSID       "INFINITUM6032_2.4"      // Sensible a mayúsculas
+#define WIFI_PASSWORD   "A9Yv3DMdXA"
 
 // -------------------------------------------------------------
 //  BROKER MQTT (Mosquitto corriendo en Docker)
@@ -46,9 +46,9 @@
 //    Si usas allow_anonymous true (solo desarrollo),
 //    puedes dejar ambos como cadena vacía: "".
 // -------------------------------------------------------------
-#define MQTT_BROKER     "192.168.X.X"   // ← Reemplazar con la IP real de tu PC
+#define MQTT_BROKER     "192.168.1.82"   // ← Reemplazar con la IP real de tu PC
 #define MQTT_PORT       1883
 #define MQTT_USER       "greenhouse"
-#define MQTT_PASSWORD   "reemplazar_con_password_real"
+#define MQTT_PASSWORD   "greenhouse123"
 
 #endif // SECRETS_H
