@@ -1,34 +1,32 @@
-# Gradle files
+# Android / Kotlin
+*.iml
 .gradle/
-build/
+/local.properties
+/.idea/
+/android-app/build/
 
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
+# PHP / Backend
+vendor/
+.env
 *.log
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
+# Docker
+docker/postgres-data/
+docker/node-red-data/
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+# ESP32 / Arduino
+esp32/**/*.elf
+esp32/**/*.bin
+esp32/**/secrets.h
+esp32/**/*.bin
+esp32/**/*.elf
 
-# Keystore files
-*.jks
-*.keystore
+# Sistema operativo
+.DS_Store
+Thumbs.db
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
+# Claves y configuracion sensible
+*.key
+*.pem
+config/secrets.php
+config/gemini_key.php
