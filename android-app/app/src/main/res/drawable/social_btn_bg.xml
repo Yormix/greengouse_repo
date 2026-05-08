@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo blanco -->
+    <solid android:color="#FFFFFF" />
+
+    <!-- Bordes redondeados iguales a los demás -->
+    <corners android:radius="30dp" />
+
+    <!-- Un borde gris muy clarito para que no se pierda en el fondo verde -->
+    <stroke
+        android:width="1dp"
+        android:color="#E2E8F0" />
+</shape>
