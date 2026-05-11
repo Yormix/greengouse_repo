@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.itu.greenhouse.MenuActivity
 
 class MenuActivity : AppCompatActivity() {
 
@@ -13,10 +12,7 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
 
         findViewById<Button>(R.id.btnActividadesPendientes).setOnClickListener {
-            // TODO: navegar a ActividadesPendientesActivity
-        }
-stener {
-            // TODO: navegar a ActividadesPendientesActivity
+            startActivity(Intent(this, ActividadesActivity::class.java))
         }
         findViewById<Button>(R.id.btnAgenda).setOnClickListener {
             startActivity(Intent(this, AgendaActivity::class.java))
@@ -31,7 +27,7 @@ stener {
         }
 
         findViewById<Button>(R.id.btnDispositivos).setOnClickListener {
-            // TODO: navegar a DispositivosActivity
+            startActivity(Intent(this, DispositivosActivity::class.java))
         }
     }
 }

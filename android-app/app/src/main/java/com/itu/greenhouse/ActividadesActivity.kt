@@ -8,12 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import com.itu.greenhouse.ActividadesActivity
 
 class ActividadesActivity : AppCompatActivity() {
 
     private lateinit var btnRegresar: ImageButton
-    private lateinit var btnInicio: ImageButton
     private lateinit var btnMenu: ImageButton
     private lateinit var btnAgregar: Button
     private lateinit var lvActividades: ListView
@@ -42,12 +40,6 @@ class ActividadesActivity : AppCompatActivity() {
         lvActividades.adapter = adapter
 
         btnRegresar.setOnClickListener { finish() }
-
-        btnInicio.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-            startActivity(intent)
-        }
 
         btnMenu.setOnClickListener {
             startActivity(Intent(this, MenuActivity::class.java))
