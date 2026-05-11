@@ -43,7 +43,7 @@ class PantallaPrincipalActivity : AppCompatActivity() {
 
         // Abrir menú
         btnMenu.setOnClickListener {
-            startActivity(Intent(this, PantallaPrincipalActivity::class.java))
+            startActivity(Intent(this, MenuActivity::class.java))
         }
 
         // Bottom nav
