@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp">
+
+    <!-- Device Label -->
+    <TextView
+        android:id="@+id/tvDeviceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dispositivo: (X)"
+        android:textColor="#00A550"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Action Buttons Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- Primary Action Button (Abrir / Encender) -->
+        <Button
+            android:id="@+id/btnPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="Abrir"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:backgroundTint="#2E7D32"
+            android:paddingHorizontal="24dp"
+            android:stateListAnimator="@null"
+            android:layout_marginEnd="10dp"
+            style="@style/Widget.MaterialComponents.Button" />
+
+        <!-- Secondary Action Button (Cerrar / Apagar) -->
+        <Button
+            android:id="@+id/btnSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="Cerrar"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:backgroundTint="#C2185B"
+            android:paddingHorizontal="24dp"
+            android:stateListAnimator="@null"
+            style="@style/Widget.MaterialComponents.Button" />
+    </LinearLayout>
+
+    <!-- Estado Badge -->
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="160dp"
+        android:layout_height="36dp"
+        android:background="@drawable/card_device_bg"
+        android:backgroundTint="#A5D6A7"
+        android:gravity="center"
+        android:text="Estado: (X)"
+        android:textColor="#1B5E20"
+        android:textStyle="bold"
+        android:textSize="12sp" />
+
+</LinearLayout>
