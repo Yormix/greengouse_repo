@@ -15,6 +15,27 @@
         <activity android:name=".MisDispositivosActivity" />
         <activity android:name=".ConfiguracionActivity" />
         <activity
+            android:name=".ActividadesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistorialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgendaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaPrincipalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeleccionHuerto"
+            android:exported="false" />
+        <activity
+            android:name=".SeleccionRol"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
