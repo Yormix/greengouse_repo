@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_main"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="48dp"
+    android:paddingBottom="32dp">
+
+    <!-- Ícono usuario -->
+
+    <ImageView
+        android:id="@+id/ivUsuario"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icono_usuario"
+        android:contentDescription="Usuario" />
+
+    <!-- Nombre usuario -->
+    <TextView
+        android:id="@+id/tvNombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Pedro Pérez Marín"
+        android:textColor="@color/text_black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!-- Espaciado -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_gray"
+        android:layout_marginVertical="20dp" />
+
+    <!-- Opciones del menú -->
+    <Button
+        android:id="@+id/btnActividadesPendientes"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp"
+        android:text="Actividades pendientes"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:background="@drawable/bg_option_rounded"
+        android:stateListAnimator="@null" />
+
+    <Button
+        android:id="@+id/btnAgenda"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp"
+        android:text="Agenda"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:background="@drawable/bg_option_rounded"
+        android:stateListAnimator="@null" />
+
+    <Button
+        android:id="@+id/btnSensores"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp"
+        android:text="Sensores"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:background="@drawable/bg_option_rounded"
+        android:stateListAnimator="@null" />
+
+    <Button
+        android:id="@+id/btnHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp"
+        android:text="Historial del estado del suelo"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:background="@drawable/bg_option_rounded"
+        android:stateListAnimator="@null" />
+
+    <Button
+        android:id="@+id/btnDispositivos"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="Dispositivos externos"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:background="@drawable/bg_option_rounded"
+        android:stateListAnimator="@null" />
+
+</LinearLayout>

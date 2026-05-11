@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_main"
+    android:paddingHorizontal="28dp"
+    android:paddingTop="48dp"
+    android:paddingBottom="32dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Selecciona tipo de usuario"
+        android:textColor="@color/text_black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp" />
+
+    <!-- Descripción -->
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Si eres usuario supervisor, deberás insertar tu clave única de usuario proporcionada por el administrador del sistema."
+        android:textColor="@color/text_gray"
+        android:textSize="13sp"
+        android:lineSpacingExtra="3dp" />
+
+    <!-- Espacio entre descripción y opciones -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Opción Supervisor -->
+    <LinearLayout
+        android:id="@+id/llSupervisor"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/bg_option_rounded"
+        android:elevation="2dp">
+
+        <RadioButton
+            android:id="@+id/rbSupervisor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/green_primary" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="14dp"
+            android:text="Supervisor/patrón"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!-- Opción Trabajador -->
+    <LinearLayout
+        android:id="@+id/llTrabajador"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/bg_option_rounded"
+        android:elevation="2dp">
+
+        <RadioButton
+            android:id="@+id/rbTrabajador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/green_primary" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="14dp"
+            android:text="Trabajador"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!-- Espacio entre opciones y botón -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Botón CONTINUAR con gradiente -->
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="CONTINUAR"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:background="@drawable/btn_gradient"
+        android:enabled="false"
+        android:alpha="0.5"
+        android:stateListAnimator="@null" />
+
+</LinearLayout>
