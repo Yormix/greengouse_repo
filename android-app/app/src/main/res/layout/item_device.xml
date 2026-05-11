@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/card_device_bg"
+    android:paddingHorizontal="16dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tvDeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Dispositivo"
+        android:textColor="#1B5E20"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/ivShare"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_share"
+        android:tint="#2E7D32" />
+
+</RelativeLayout>
